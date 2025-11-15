@@ -651,8 +651,8 @@ body {
 
 /* Big Background Image */
 .modern-big {
-  width: 70%;
-  height: 540px; /* ★ More height — matches Furni */
+  width: 60%;
+  height: 500px; /* ★ More height — matches Furni */
   object-fit: cover;
   border-radius: 25px;
 }
@@ -663,7 +663,7 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 25px;
-  left: 60%;
+  left: 50%;
   position: absolute;
   top: 10px; /* ★ Lowered — matches Furni */
   z-index: 3;
@@ -676,10 +676,9 @@ body {
   height: 420px;
   object-fit: cover;
   border-radius: 25px;
-
   position: absolute;
-  left: 50%;
-  bottom: -95px;
+  left: 44%;
+  bottom: -130px;
   z-index: 3;
 }
 
@@ -1193,6 +1192,7 @@ b {
 .footer-links {
   list-style: none;
   padding: 0;
+  margin-top: 62px;
 }
 
 .footer-links li {
@@ -1240,4 +1240,156 @@ b {
 
 .footer-bottom a:hover {
   color: grey;
+}
+
+/* ===================== EXTRA RESPONSIVE BREAKPOINTS ===================== */
+
+/* Ultra-wide screens (≥1600px) */
+@media (min-width: 1600px) {
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  .hero-image {
+    width: 850px;
+    height: 620px;
+  }
+
+  .products-section,
+  .why-section,
+  .modern-section,
+  .mini-products-section,
+  .blog-section,
+  .newsletter-section,
+  .furni-footer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .products-right {
+    gap: 80px;
+  }
+}
+
+/* Large laptops (1300px–1500px) */
+@media (max-width: 1500px) and (min-width: 1201px) {
+  .hero-image {
+    width: 650px;
+    height: 500px;
+  }
+
+  .hero-text h1 {
+    font-size: 54px;
+  }
+
+  .products-section,
+  .why-section,
+  .modern-section {
+    padding: 90px 60px;
+  }
+}
+
+/* Medium laptops & landscape tablets (1000px–1200px) */
+@media (max-width: 1200px) and (min-width: 993px) {
+  .hero-content {
+    padding: 40px 60px;
+  }
+
+  .hero-image {
+    width: 500px;
+    height: auto;
+  }
+
+  .products-right {
+    gap: 45px;
+  }
+
+  .why-image {
+    width: 460px;
+  }
+
+  .modern-text h2 {
+    font-size: 36px;
+  }
+}
+
+/* Small tablets and large phones (600px–767px) */
+@media (max-width: 767px) and (min-width: 601px) {
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-image {
+    width: 300px;
+  }
+
+  .product-card {
+    width: 85%;
+  }
+
+  .why-left h2 {
+    font-size: 28px;
+  }
+
+  .modern-text h2 {
+    font-size: 28px;
+  }
+}
+
+/* Small phones (≤480px but >360px) */
+@media (max-width: 480px) and (min-width: 361px) {
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-image {
+    width: 260px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 14px;
+  }
+
+  .why-left h2,
+  .modern-text h2 {
+    font-size: 26px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+}
+
+/* Extra small phones (≤360px) */
+@media (max-width: 360px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    width: 220px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  .products-section,
+  .why-section,
+  .modern-section,
+  .blog-section,
+  .newsletter-section {
+    padding: 40px 20px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    font-size: 28px;
+  }
 }
