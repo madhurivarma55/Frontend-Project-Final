@@ -299,6 +299,7 @@ body {
 
 .products-left {
   max-width: 400px;
+  margin-top: 60px;
 }
 
 .products-left h2 {
